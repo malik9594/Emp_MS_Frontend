@@ -8,6 +8,7 @@ const Login = () => {
         email: '',
         password: '',
     });
+
     const [message, setMessage] = useState('');
     const [type, setType] = useState('');
     const [error, setError] = useState();
@@ -31,8 +32,6 @@ const Login = () => {
                     body: JSON.stringify(values),
                 }
                 )
-
-
                 const data = await response.json();
                 if (data.loginStatus) {
                     navigate('/dashboard/home');

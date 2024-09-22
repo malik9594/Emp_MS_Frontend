@@ -31,7 +31,7 @@ const Employee = () => {
                 if (!response.ok) {
                     throw new Error(`Error: ${response.status}`);  // Handle non-200 responses
                 }
-                const data = await response.json();  // Await the response data
+                const data = await response.json(); 
                 console.log("Data for delete is:", data);
                 location.reload();
             } catch (err) {

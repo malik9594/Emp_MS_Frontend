@@ -56,16 +56,7 @@ const EditEmployee = () => {
             }
         }
         fetchData();
-        // axios.get('http://localhost:3000/auth/employee/'+id)
-        // .then(result=>{
-        //     setEmployee({...employee,
-        //         name:result.data[0].name,
-        //         email: result.data[0].email,
-        //         salary: result.data[0].salary,
-        //         address: result.data[0].address,
-        //     })
-        //     console.log("Edit data for employee", employee);
-        // })
+        
     }, [id])
 
     const handleSubmit = (e) => {

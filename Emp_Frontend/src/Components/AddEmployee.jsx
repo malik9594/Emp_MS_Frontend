@@ -14,7 +14,6 @@ const AddEmployee = () => {
         image: ''
 
     });
-    // console.log("Emplolyee", employee);
     const [data1, setData1] = useState([]);
     useEffect(() => {
         const getData = async () => {

@@ -39,15 +39,7 @@ const AddCategory = () => {
                 catch (err) {
                     console.log("Error is occuing in Post Data of Add Category", err)
                 }
-                // axios.post('http://localhost:3000/auth/add_category',{category})
-                // .then(result =>{
-                //     if(result.data.Status){
-                //         navigate('/dashboard/category')
-                //     }
-                //     else {
-                //         alert(result.data.Error);
-                //     }
-                // })
+                
             }
             PostData();
         }
